@@ -1,0 +1,26 @@
+/* CSS Responsiveness */
+
+@media only screen and (max-width: 480px) {
+    nav{
+        flex-direction: column;
+    }
+    nav .logo {
+        position: relative;
+        right: 140px;
+    }
+    nav .links {
+        flex-direction: column;
+        text-align: center;
+    }
+    nav .links a {
+        border-bottom: 2px solid grey;
+        width: 90vw;
+        padding-bottom: 0.5rem
+    }
+    nav .btn{
+        margin-top: 1rem;
+    }
+    .menu-bar{
+        display: block;
+    }
+}
