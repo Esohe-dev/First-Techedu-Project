@@ -1,4 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Train+One&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Whisper&display=swap');
 @import url("mobile.css");
 
 body {
@@ -59,13 +61,10 @@ nav .btn span {
 header {
   background-color: #074643;
   color: white;
-  height: 100vh;
   font-family: "Inter", sans-serif;
-  display: flex;
-  align-items: center;
-  gap: 9rem;
   clip-path: ellipse(90% 70% at 27% 18%);
-  /* overflow-x: hidden; */
+  height: 80vh;
+  padding-top: 12rem;
 }
 
 header .texts {
@@ -94,7 +93,7 @@ header .texts .txt #light {
 
 header .texts .txt small {
   font-size: 1.5rem;
-  font-weight: 100;
+  font-weight: 250;
 }
 
 header .texts .btns {
@@ -119,20 +118,22 @@ header .texts .btns .icon {
   align-items: center;
   gap: 0.5rem;
   font-weight: 900;
-  font-size: 0.8rem;
+  font-size: 1rem;
 }
 
-.image {
+
+.image{
   position: relative;
-  bottom: 32rem;
+  bottom: 35rem;
   left: 45rem;
+  height: 0;
 }
 
-.image img {
-  width: 400px;
+.image img{
+  width: 450px;
 }
 
-.image .txt {
+.image .txt{
   display: flex;
   flex-direction: column;
   background-color: white;
@@ -146,13 +147,232 @@ header .texts .btns .icon {
   position: relative;
   bottom: 230px;
   right: 60px;
+  font-family: "inter", sans-serif;
 }
 
 .image .txt #head {
   font-size: 3rem;
-  font-weight: 900;
+  font-weight: 850;
+  font-style: bold;
 }
 
 .image .txt span {
-  font-size: 0.8rem;
+  font-size: 1rem;
+  font-weight: 850;
+  font-style: bold;
+}
+
+section{
+  display: flex;
+  justify-content: center;
+  gap: 16rem;
+}
+
+section .about{
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  font-family: "Inter", sans-serif;
+  padding-top: 2rem;
+}
+
+section .about .abt span{
+  display: flex;
+  flex-direction: column;
+}
+
+section .about .abt #head{
+  font-weight: 800;
+  font-size: 38px;
+}
+
+section .about .abt #light{
+  font-weight: 250;
+  font-style: light;
+  font-size: 25px;
+  padding-top: 20px;
+}
+
+section .about .btns{
+  display: flex;
+  gap: 30px;
+  padding-top: 40px;
+}
+
+section .about .btns .btn{
+  border: 2px solid black;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  border-radius: 27px;
+  padding: 0.8rem 1.5rem;
+  background-color: #101C1B;
+}
+
+section .about .btns .btn span{
+  color: #ffffff;
+}
+
+section .about .btns .icons {
+  display: flex;
+  gap: 0.8rem;
+}
+
+section .about .btns .icons img{
+  width: 60px;
+}
+
+section .about .info{
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  font-weight: 650;
+  font-size: 20px;
+  font-style: bold;
+  padding-top: 60px;
+  align-items: flex-start;
+}
+
+section .about .info #info-1{
+  display: flex;
+  gap: 6rem;
+  border: 1.4px solid black;
+  border-radius: 28px;
+  padding: 15px 50px;
+  width: 400px;
+}
+
+section .about .info #info-2{
+  display: flex;
+  gap: 2.2rem;
+  padding: 15px 50px;
+}
+
+section .about .info #info-3{
+  display: flex;
+  gap: 3.5rem;
+  border: 1.4px solid black;
+  border-radius: 28px;
+  padding: 15px 50px;
+  width: 400px;
+}
+
+section .about .info #info-4{
+  display: flex;
+  gap: 5.2rem;
+  padding: 15px 50px;
+}
+
+section .about .info #info-5{
+  display: flex;
+  gap: 2.5rem;
+  padding: 15px 50px;
+  padding-bottom: 80px;
+}
+
+section .about .info #tell{
+  display: flex;
+  gap: 4.5rem;
+  border: 1.4px solid black;
+  border-radius: 28px;
+  padding: 15px 50px;
+  width: 400px;
+}
+
+section .texts{
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  font-family: "inter", sans-serif;
+}
+
+section .texts #txt-1{
+  font-size: 1rem;
+  font-weight: 350;
+  font-style: light;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  padding-top: 3rem;
+}
+
+section .texts .txt-2 span{
+  font-family: "whisper", cursive;
+  font-weight: 300;
+  font-size: 75px;
+  color: #000000;
+  font-style: light;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  left: 4rem;
+}
+
+section .texts .txt-2 span #txt-2b{
+  position: relative;
+  bottom: 2rem;
+}
+
+section .texts .txt-3{
+  display: flex;
+  justify-content: center; 
+  gap: 2rem;
+}
+
+section .texts .txt-3 .bold-1{
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  text-align: center;
+}
+
+section .texts .txt-3 .bold-1 #bold-1a{
+  display: flex;
+  flex-direction: column;
+  border: 9px solid #398e8a;
+  border-radius: 20px;
+  padding: 20px 35px;
+  font-weight: 800;
+  font-style: bolder;
+  font-size: 45px;
+}
+
+section .texts .txt-3 .bold-1 #bold-1a #bold-1b{
+  font-size: 20px;
+  font-weight: 500;
+  font-style: bold;
+}
+
+section .texts .txt-3 .bold-2{
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  text-align: center;
+}
+
+section .texts .txt-3 .bold-2 #bold-2a{
+  display: flex;
+  flex-direction: column;
+  border: 9px solid #398e8a;
+  border-radius: 20px;
+  padding: 20px 35px;
+  font-weight: 800;
+  font-style: bolder;
+  font-size: 45px;
+}
+
+section .texts .txt-3 .bold-2 #bold-2a #bold-2b{
+  font-size: 20px;
+  font-weight: 500;
+  font-style: bold;
+}
+
+.line{
+  border:5px solid #8E7AB8;
+  border-radius: 18px;
+  width: 450px;
+  height: 368px;
+  position: relative;
+  bottom: 30rem;
+  left: 51rem;
 }

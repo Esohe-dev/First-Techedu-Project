@@ -1,4 +1,7 @@
 /* CSS Responsiveness */
+body{
+    overflow-x: hidden;
+}
 
 @media only screen and (max-width: 480px) {
     nav{
@@ -6,7 +9,7 @@
     }
     nav .logo {
         position: relative;
-        right: 140px;
+        right: 100px;
     }
     nav .links {
         flex-direction: column;
@@ -20,7 +23,109 @@
     nav .btn{
         margin-top: 1rem;
     }
-    .menu-bar{
+    
+    /* .menu-bar{
         display: block;
+    } */
+
+    header{
+        padding-top: 10rem;
+    }
+
+    header .texts{
+        position: relative;
+        left: 0.3rem;
+        gap: 1rem;
+        padding-left: 1rem;
+    }
+
+    header .texts .btns{
+        gap: 1rem;
+    }
+
+    .image{
+        position: relative;
+        left: 12rem;
+        bottom: 20rem;
+    }
+
+    .image .txt{
+       gap: 0.3rem;
+       position: relative;
+       bottom: 180px;
+       padding: 0.3rem 1.5rem;
+    }
+
+    .image img{
+        width: 250px;
+    }
+
+    section{
+       display: flex; 
+       flex-direction: column;
+       gap: 3rem;
+    }
+
+    section .about{
+        padding-top: 0%;
+        gap: 1rem;
+        padding-left: 1rem;
+    }
+
+    section .texts #txt-1{
+        padding-top: 0%;
+    }
+
+    section .about .btns{
+        gap: 15px;
+    }
+
+    section .about .btns .btn{
+        padding: 0.4rem 0.8rem;
+        gap: 0.3rem;
+    }
+
+    section .about .info{
+        gap: 2px;
+        padding-top: 40px;
+        font-size: 20px;
+    }
+
+    section .about .info #info-1{
+        padding: 15px 30px;
+        width: 400px;
+    }
+
+    section .about .info #info-2{
+        padding: 15px 30px;
+    }
+
+    section .about .info #info-3{
+        padding: 15px 30px;
+        width: 400px;
+    }
+
+    section .about .info #info-4{
+        padding: 15px 30px;
+    }
+
+    section .about .info #info-5{
+        padding: 15px 30px;
+    }
+
+    section .about .info #tell{
+        padding: 15px 30px;
+        width: 400px;
+    }
+
+    section .texts{
+        padding-left: 1rem;
+    }
+
+    .line{
+        position: relative;
+        left: 3.5rem;
+        bottom: 22.5rem;
+        width: 430px;
     }
 }
