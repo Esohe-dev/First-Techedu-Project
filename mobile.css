@@ -30,6 +30,8 @@ body{
 
     header{
         padding-top: 10rem;
+        clip-path: none;
+        text-align: center;
     }
 
     header .texts{
@@ -45,8 +47,8 @@ body{
 
     .image{
         position: relative;
-        left: 12rem;
-        bottom: 20rem;
+        left: 8rem;
+        bottom: 19rem;
     }
 
     .image .txt{
@@ -67,7 +69,6 @@ body{
     }
 
     section .about{
-        padding-top: 0%;
         gap: 1rem;
         padding-left: 1rem;
     }
