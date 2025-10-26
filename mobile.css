@@ -1,9 +1,10 @@
 /* CSS Responsiveness */
-body{
-    overflow-x: hidden;
-}
 
 @media only screen and (max-width: 480px) {
+    body {
+        overflow-x: hidden;
+    }
+
     nav{
         flex-direction: column;
     }
@@ -43,6 +44,7 @@ body{
 
     header .texts .btns{
         gap: 1rem;
+        justify-content: center;
     }
 
     .image{
