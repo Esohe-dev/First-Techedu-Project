@@ -1,16 +1,9 @@
 /* CSS Responsiveness */
 
 @media only screen and (max-width: 480px) {
-    body {
-        overflow-x: hidden;
-    }
 
     nav{
         flex-direction: column;
-    }
-    nav .logo {
-        position: relative;
-        right: 100px;
     }
     nav .links {
         flex-direction: column;
@@ -24,10 +17,6 @@
     nav .btn{
         margin-top: 1rem;
     }
-    
-    /* .menu-bar{
-        display: block;
-    } */
 
     header{
         padding-top: 10rem;

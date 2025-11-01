@@ -27,9 +27,10 @@ nav {
   align-items: center;
   padding: 1px;
   font-family: "Inter", sans-serif;
+  
 }
 
-nav .logo img {
+.logo img {
   width: 100px;
 }
 
