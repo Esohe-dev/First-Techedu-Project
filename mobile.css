@@ -23,7 +23,7 @@ body{
     }
 
     header{
-        padding-top: 10rem;
+        padding-top: 8rem;
         clip-path: none;
         text-align: center;
     }
@@ -125,6 +125,7 @@ body{
         position: relative;
         left: 3rem;
         bottom: 23.5rem;
-        width: 430px;
+        width: 400px;
+        height: 380px;
     }
 }
