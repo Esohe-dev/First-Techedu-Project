@@ -3,21 +3,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Whisper&display=swap');
 @import url("mobile.css");
 
+*{
+  box-sizing: border-box;
+}
+
 body {
   margin: 0%;
   padding: 0%;
   overflow-x: hidden;
-}
-
-.menu-bar{
-  display: none;
-}
-
-.logo{
-  position: relative;
-  top: 0px;
-  left: 80px;
-  max-height: 0;
 }
 
 nav {
@@ -27,31 +20,49 @@ nav {
   align-items: center;
   padding: 1px;
   font-family: "Inter", sans-serif;
-  
+  position: sticky;
+  top: 0%;
+  z-index: 100;
 }
 
-.logo img {
+nav .logo img {
   width: 100px;
 }
 
 nav .links {
   display: flex;
   align-items: center;
+  justify-content: space-between;
+  gap: 10rem;
+}
+
+nav .links .menu{
+  display: flex;
+  align-items: center;
   gap: 2rem;
 }
 
-nav .links a {
+nav .links .menu a {
   text-decoration: none;
   color: white;
 }
 
-nav .btn {
+nav .links .menu a:hover{
+  color: #000000;
+}
+
+nav #mobileMenu .btn {
   display: flex;
   align-items: center;
-  gap: 0.5rem;
+  justify-content: space-around;
+  /* gap: 0.5rem; */
   border: 3px solid #d4bfec;
   border-radius: 27px;
   padding: 0.8rem 2rem;
+}
+
+nav #mobileMenu .btn:hover{
+  background-color: #000000;
 }
 
 nav .btn span {
@@ -59,51 +70,54 @@ nav .btn span {
   font-size: 0.8rem;
 }
 
+nav #menubtn{
+  display: none;
+}
+
 header {
   background-color: #074643;
   color: white;
   font-family: "Inter", sans-serif;
   clip-path: ellipse(90% 70% at 27% 18%);
-  height: 80vh;
-  padding-top: 12rem;
+  height: 100vh;
+  padding-top: 9rem;
+  padding-left: 12rem;
 }
 
-header .texts {
+header .texts .txts{
   display: flex;
   gap: 3rem;
   flex-direction: column;
-  position: relative;
-  left: 12rem;
 }
 
-header .texts .txt {
+header .texts .txts .txt {
   display: flex;
   gap: 0.8rem;
   flex-direction: column;
 }
 
-header .texts .txt #head {
+header .texts .txts .txt #head {
   font-family: "Train one", cursive;
   font-size: 3rem;
 }
 
-header .texts .txt #light {
+header .texts .txts .txt #light {
   font-size: 3.5rem;
   font-weight: 900;
 }
 
-header .texts .txt small {
+header .texts .txts .txt small {
   font-size: 1.5rem;
   font-weight: 250;
 }
 
-header .texts .btns {
+header .texts .txts .btns {
   display: flex;
   gap: 1.5rem;
   align-items: center;
 }
 
-header .texts .btns button {
+header .texts .txts .btns button {
   background-color: #101c1b;
   color: white;
   font-family: inherit;
@@ -114,7 +128,7 @@ header .texts .btns button {
   font-weight: 900;
 }
 
-header .texts .btns .icon {
+header .texts .txts .btns .icon {
   display: flex;
   align-items: center;
   gap: 0.5rem;
@@ -125,13 +139,13 @@ header .texts .btns .icon {
 
 .image{
   position: relative;
-  bottom: 35rem;
+  bottom: 30rem;
   left: 45rem;
   height: 0;
 }
 
 .image img{
-  width: 450px;
+  width: 400px;
 }
 
 .image .txt{
@@ -139,7 +153,7 @@ header .texts .btns .icon {
   flex-direction: column;
   background-color: white;
   color: black;
-  max-width: fit-content;
+  max-width: 10rem;
   padding: 0.5rem 2rem;
   gap: 0.5rem;
   border-radius: 30px;
@@ -373,7 +387,7 @@ section .texts .txt-3 .bold-2 #bold-2a #bold-2b{
   border-radius: 18px;
   width: 450px;
   height: 372px;
-  position: relative;
-  bottom: 30rem;
-  left: 51rem;
+  position: absolute;
+  top: 62rem;
+  left: 49.5rem;
 }

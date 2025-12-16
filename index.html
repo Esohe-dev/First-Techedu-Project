@@ -14,27 +14,31 @@
       referrerpolicy="no-referrer"/>
   </head>
   <body>
-    <div class="logo">
-      <img src="assets/H-removebg-preview 1.png" alt="" />
-    </div>
     <nav>
-      <div></div>
-      <div class="links">
-        <a href="">Home</a>
-        <a href="">About</a>
-        <a href="">Services</a>
-        <a href="">Portfolio</a>
-        <a href="">Contact</a>
-        <a href="">Blog</a>
+      <div class="logo">
+      <img src="assets/H-removebg-preview 1.png" alt="" />
       </div>
-      <div class="btn">
+      <div class="links" id="mobileMenu">
+        <div class="menu">
+          <a href="">Home</a>
+          <a href="">About</a>
+          <a href="">Services</a>
+          <a href="">Portfolio</a>
+          <a href="">Contact</a>
+          <a href="">Blog</a>
+        </div>
+
+        <div class="btn">
         <img src="assets/Vector.png" alt="" />
         <span>DOWNLOAD CV</span>
       </div>
+      </div>
+      <i class="fa-solid fa-bars" id="menubtn"></i>
     </nav>
 
     <header>
       <div class="texts">
+        <div class="txts">
         <div class="txt">
           <span id="head">HELLO I AM</span>
           <span id="light">Lorehm ipsum</span>
@@ -51,8 +55,9 @@
           </div>
         </div>
       </div>
+      </div>
 
-      <div></div>
+      
     </header>
 
     <!-- IMAGE DIV -->
@@ -60,9 +65,7 @@
       <img src="assets/Ellipse 1.png" alt="" />
       <div class="txt">
         <span id="head">10K</span>
-        <span>Lorem <br />
-          ipsum <br />
-          dolor sit</span
+        <span>Lorem ipsum dolor sit</span
         >
       </div>
     </div>
@@ -124,5 +127,7 @@
     </section>
 
     <div class="line"></div>
+
+    <script src="app.js"></script>
   </body>
 </html>
